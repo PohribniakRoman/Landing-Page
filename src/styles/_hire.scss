@@ -1,0 +1,50 @@
+.hire {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__subtitle {
+        padding: 40px 0;
+        font-size: 25px;
+        font-weight: 600;
+        color: #ffffff;
+
+        font-family: "Open Sans", sans-serif;
+    }
+    &__btn {
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        font-family: "Open Sans", sans-serif;
+        color: #0679fc;
+        transition: 0.7s;
+        font-weight: 500;
+        border: none;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 1);
+        }
+    }
+}

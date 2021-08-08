@@ -1,0 +1,92 @@
+.main {
+    margin-top: 30px;
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__index {
+        color: #4399fa;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        &::before {
+            content: "0";
+        }
+    }
+    &__subtitle {
+        color: #4399fa;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 20px;
+    }
+    &__title {
+        text-align: center;
+        color: #4c637f;
+        letter-spacing: 1px;
+        font-size: 48px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 80px;
+    }
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        &--item {
+            flex: 1 1 50%;
+            text-align: left;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            & p {
+                width: 90%;
+                margin: 0 20px;
+                color: #111;
+            }
+        }
+    }
+    &__icon {
+        margin: 0 auto;
+        background-image: url(../images/icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 515px;
+        margin-bottom: 40px;
+        height: 410px;
+    }
+    &__separator{
+        position: relative;
+        width:100%;
+        height: 600px;
+        background-image: url(https://images.pexels.com/photos/4406192/pexels-photo-4406192.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-4406192.jpg&fm=jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        z-index: 100;
+        top: 0;
+            height: 30%;
+            background:linear-gradient(#fff,rgba(255,255,255,0));
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        z-index: 100;
+        bottom: 0;
+            height: 20%;
+            background:linear-gradient(360deg,#fff,rgba(255,255,255,0));
+        }
+    }
+}
